@@ -212,7 +212,10 @@ function setOperand(){
         operand1 = outputDisplay.textContent;
     }
     else if(isSecondOperand){
-        operand2 = outputDisplay.textContent;
+        if(outputDisplay.textContent == '0'){
+            operand2 = '';
+        }
+        else operand2 = outputDisplay.textContent;
     }
 }
 
